@@ -1,0 +1,39 @@
+/*estilos para el contenedor*/
+#contenedor /*el id contenedor se llama con numeral* y el el class*/
+{
+ width:600px;
+height:400px;
+background:#99DCDE;
+margin:100px auto;
+}
+/* estilos para el titulo*/
+#titulo h3
+{
+background:#336699;
+height:50px;
+text-align: center;
+color:#fff; /*permite cambiar colores de texto*/
+font-family: arial; /*permite cambiar tipo de letra*/
+font-size: 1.5em; /*permite cambiar tamaño de letra*/
+/*padding: 2px 0 0 0; /*borde*/
+
+}
+
+/* estilos para el texto*/
+#texto
+{
+background:#eee;
+text-align:center;
+}
+textarea {
+   font-family: Courier, sans-serif;
+   height: 2em;
+   width: 500px;
+   }
+   
+#rta
+{
+
+margin-top:20px;
+text-align:center;
+}

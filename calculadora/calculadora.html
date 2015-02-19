@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULADORA</title>
+    <script src="scripts/script.js">   
+    </script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"
+</head>
+<body>
+ <form action="" method="POST" name="form1">
+  <div id="contenedor"> 
+    <div id="titulo"><h3>CALCULADORA</h3> </div>
+        <div id="texto"><textarea name="txt"></textarea>
+                 <br>
+                 <input type="button" value="1" onclick="calcula();">
+                 <input type="button" value="2" onclick="calcula();">
+                 <input type="button" value="3" onclick="calcula();">
+      <input type="button" value="4" onclick="calcula();">
+    <input type="button" value="5" onclick="calcula();">
+     <input type="button" value="6" onclick="calcula();">
+   <input type="button" value="7" onclick="calcula();">
+   <input type="button" value="8" onclick="calcula();">
+   <input type="button" value="9" onclick="calcula();">
+   <input type="button" value="0" onclick="calcula();">
+    <br>  
+<input type="button" value="+" onclick="calcula('+');">
+<input type="button" value="-" onclick="calcula('-');">
+<input type="button" value="*" onclick="calcula('*');">
+<input type="button" value="/" onclick="calcula('/');">	
+    <br>
+	<br>
+    <input type="reset" value="resetear">     
+        </div>
+    <div id="rta"> </div>
+     Resultado= <input type="text" name="txt_rta" readonly>
+  </div>
+ </form>
+</body>
+</html>
