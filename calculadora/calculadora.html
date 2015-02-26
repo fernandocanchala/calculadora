@@ -1,39 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CALCULADORA</title>
-    <script src="scripts/script.js">   
-    </script>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"
-</head>
-<body>
- <form action="" method="POST" name="form1">
-  <div id="contenedor"> 
-    <div id="titulo"><h3>CALCULADORA</h3> </div>
-        <div id="texto"><textarea name="txt"></textarea>
-                 <br>
-                 <input type="button" value="1" onclick="calcula();">
-                 <input type="button" value="2" onclick="calcula();">
-                 <input type="button" value="3" onclick="calcula();">
-      <input type="button" value="4" onclick="calcula();">
-    <input type="button" value="5" onclick="calcula();">
-     <input type="button" value="6" onclick="calcula();">
-   <input type="button" value="7" onclick="calcula();">
-   <input type="button" value="8" onclick="calcula();">
-   <input type="button" value="9" onclick="calcula();">
-   <input type="button" value="0" onclick="calcula();">
-    <br>  
-<input type="button" value="+" onclick="calcula('+');">
-<input type="button" value="-" onclick="calcula('-');">
-<input type="button" value="*" onclick="calcula('*');">
-<input type="button" value="/" onclick="calcula('/');">	
-    <br>
-	<br>
-    <input type="reset" value="resetear">     
-        </div>
-    <div id="rta"> </div>
-     Resultado= <input type="text" name="txt_rta" readonly>
-  </div>
- </form>
-</body>
+
+<html > 
+  <head> 
+    <title>Calculadora</title> 
+    <script src="operaciones.js"></script> 
+  </head>
+<body> 
+  <div align="center"> 
+  <table>  
+    <form name="formi" action="" method="">                   
+          <input type="text" value=0 name="ver"/></th>               
+        <tr>
+          <b> 
+            <td width="33">
+              <input type="button" name="dividir" value="/"  onclick="operacion(4)" />
+            </td>
+            <td width="33">
+              <input type="button" name="multiplicar" value="*" onclick="operacion(3)"/>
+            </td>
+            <td width="31">
+              <input type="button" name="menos" value="-"  onclick="operacion(2)"/>
+            </td>
+          </tr> 
+      <tr>
+        <td>
+          <input type="button" name="siete" value=7 onclick="mostrar(7)"/>
+        </td>
+        <td>
+          <input type="button" onclick="mostrar(8)"name="ocho" value="8" />
+        </td>
+        <td>
+          <input type="button" name="nueve" value="9" onclick="mostrar(9)" />
+        </td> 
+        <td rowspan="2">
+          <input type="button" size="20" name="mas" value="+" onclick="operacion(1)"/>
+        </td> 
+      </tr> 
+      <tr>
+        <td>
+          <input type="button" name="cuatro" value="4" onclick="mostrar(4)" />
+        </td>
+        <td>
+          <input type="button" name="cinco" onclick="mostrar(5)" value="5" />
+        </td>
+        <td>
+          <input type="button" name="seis" onclick="mostrar(6)" value="6" />
+        </td>
+      </tr> 
+      <tr>
+        <td>
+          <input type="button" name="uno" value="1" onclick="mostrar(1)" />
+        </td>
+        <td>
+          <input type="button"name="dos" onclick="mostrar(2)" value="2" />
+        </td>
+        <td>
+          <input type="button" name="tres" value="3" onclick="mostrar(3)" />
+        </td>
+        <td rowspan="2">
+          <input type="button" name="igual" value="="  onclick="resultado()"/>
+        </td>
+      </tr> 
+      <tr>
+        <td colspan="2">
+          <input type="button" name="cero" value="0"  onclick="mostrar(0)"/>
+        </td>
+        <td>
+          <input type="button"name="punto" value="."  onclick="mostrar(.)"/>
+        </td>
+      </tr> 
+  </form> 
+  </table></td></tr></table> 
+  </div> 
+</body> 
 </html>
